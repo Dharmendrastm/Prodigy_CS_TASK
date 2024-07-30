@@ -27,8 +27,8 @@ def caesar_decrypt(text, shift):
 def main():
     while True:
         print("\nCaesar Cipher Program")
-        print("1. Encrypt")
-        print("2. Decrypt")
+        print("1. Encryption")
+        print("2. Decryption")
         print("3. Quit")
         choice = input("Choose an option: ")
 
@@ -49,7 +49,7 @@ def main():
             text = input("Enter a message to decrypt: ")
             while True:
                 try:
-                    shift = int(input("Enter a shift value (1-25): "))
+                    shift = int(input("Please Enter a shift value (1-25): "))
                     if 1 <= shift <= 25:
                         break
                     else:
